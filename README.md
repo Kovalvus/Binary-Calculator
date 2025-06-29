@@ -1,4 +1,4 @@
-Calculators for making decimal numbers into binary numbers
+Simple calculators for making decimal numbers into binary numbers
 
 Written in: php, html and python
 
