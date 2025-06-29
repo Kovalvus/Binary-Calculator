@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="liczba">podaj liczbe 10</label>
+        <input type="number" id="liczba">
+        <input type="button" value="zatwierdź" onclick="zamiana()"><br>
+
+    <p id="output"></p>
+    <script>
+        function zamiana() {
+            $Liczba = Number(document.getElementById("liczba").value);
+            Binarna = "";
+            licznik = 0
+            while ($Liczba != 0)
+                {
+                    licznik++;
+                    Binarna += $Liczba % 2;
+                    $Liczba = Math.floor($Liczba/2);
+                    if(licznik == 4)
+                {
+                    Binarna += " ";
+                    licznik = 0;
+                }
+                }
+
+            zmiana = Binarna.split('').reverse().join('');
+            document.getElementById("output").innerHTML = zmiana;
+            
+            
+        }
+    </script>
+</body>
+</html>
